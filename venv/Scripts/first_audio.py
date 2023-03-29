@@ -1,10 +1,10 @@
 import pyttsx3
 
-engine = pyttsx3.init() # Iniciando o pyttsx3
-engine.setProperty("voice", "brazil") # Configurando o pradrão de voz
+engine = pyttsx3.init() # starting the pyttsx3
+engine.setProperty("voice", "brazil") # Configuring the voice pattern
 
-engine.say('Meu nome é Bruno') # Adicionando comando para a fila
-engine.runAndWait() # runAndWait executa tudo que sta na fila
+engine.say('Meu nome é Bruno')
+engine.runAndWait()
 
 engine.save_to_file('Meu nome é Bruno', 'nome_Bruno.mp3')
 engine.runAndWait()
